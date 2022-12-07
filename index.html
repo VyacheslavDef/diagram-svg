@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="position">
+      <img style="margin-bottom: 50px; margin-left: 35px;" src="./img/loyalty.svg" alt="">
+      <div>
+        <h1 id="total_percent">72.7%</span></h1>
+        <h2>Лояльность<br /><span class="loyalty">ниже среднего</span></h2>
+      </div>
+      <div>
+        <p>
+          по отрасли: FMCG<br />значений слева от медианы<br />52.0% - 83.1%
+        </p>
+      </div>
+      <span style="color: green;">3.1</span>
+    </div>
+    <svg width="200" height="200">
+      <circle
+        class="progress_circle3"
+        cx="100"
+        cy="100"
+        r="94"
+        fill="transparent"
+        stroke-width="8"
+        stroke="rgb(125, 122, 122, 0.5)"
+      ></circle>
+      <circle
+        class="progress_circle2"
+        cx="100"
+        cy="100"
+        r="94"
+        fill="transparent"
+        stroke-width="8"
+        stroke="green"
+        stroke-linecap="round"
+      ></circle>
+      <circle
+        class="progress_circle"
+        cx="100"
+        cy="100"
+        r="94"
+        fill="transparent"
+        stroke-width="8"
+        stroke="orange"
+        stroke-linecap="round"
+      ></circle>
+    </svg>
+    <div>
+      <div class="wrapper_client">
+        <div>
+          <h3>Промоутеры</h3>
+        </div>
+        <div class="wrapper_left">
+          <div class="wrapper_input">
+            <input
+              class="value_progress"
+              id="valueOne"
+              value="32"
+              type="number"
+            />
+            <div class="wrapper_human">
+              <p style="margin-right: 3px;">81</p>
+            <img class="t" src="./img/human_full.svg" width="15px" alt="" />
+            </div>
+          </div>
+          <div class="wrapper_box">
+            <div class="wrapper_box_left">
+              <div class="color_box y"></div>
+                <div class="color_box_bot y"></div>
+              </div>
+            <p>+1.2%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper_client">
+        <div>
+          <h3>Скептики</h3>
+        </div>
+        <div class="wrapper_left">
+          <div class="wrapper_input">
+            <input
+              class="value_progress"
+              id="valueTwo"
+              value="39"
+              type="number"
+            />
+            <div class="wrapper_human">
+              <p style="margin-right: 3px;">8</p>
+            <img src="./img/human_full.svg" width="15px" alt="" />
+            </div>
+          </div>
+          <div class="wrapper_box">
+            <div class="wrapper_box_left">
+              <div class="color_box g"></div>
+                <div class="color_box_bot g"></div>
+              </div>
+          <p>+4.8%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper_client">
+        <div>
+          <h3>Критики</h3>
+        </div>
+        <div class="wrapper_left">
+          <div class="wrapper_input">
+            <input
+              class="value_progress"
+              id="valueThere"
+              value="30"
+              type="number"
+            />
+            <div class="wrapper_human">
+              <p style="margin-right: 3px;">7</p>
+            <img src="./img/human_full.svg" width="15px" alt="" />
+            </div>
+          </div>
+          <div class="wrapper_box">
+            <div class="wrapper_box_left">
+              <div class="color_box r"></div>
+                <div class="color_box_bot r"></div>
+              </div>
+          <p>-9.7%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <svg class="position_svg_line" width="50" height="200">
+      <path
+        stroke="gray"
+        stroke-width="2"
+        d="M 10,180 V 0 150 M 10,1 H 50 M 10, 125 H 30 M 10, 179 H 30"
+        />
+    </svg>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(/font/gothampro.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gotham Pro', Arial;
+}
+
+.position_svg_line {
+    position: relative;
+    bottom: 282px;
+    right: 140px;
+}
+
+h2 {
+    font-size: 18px;
+    font-family: Arial;
+}
+
+h3 {
+    font-size:12px;
+}
+
+p {
+    font-size: 10px;
+}
+
+html, body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loyalty {
+    color: orange;
+    font-size: 15px;
+}
+
+.position {
+    position: relative;
+    text-align: center;
+    top: 175px;
+}
+
+.progress_circle, .progress_circle2 {
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+
+.value_progress {
+    width: 35px;
+    height: 50%;
+    margin-bottom: 5px;
+}
+
+
+
+.wrapper_client {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.t {
+    fill: gray;
+}
+
+.wrapper_right {
+    line-height: 45px;
+}
+
+.wrapper_left {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+
+.wrapper_input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+.wrapper_human {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_box {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    background: rgb(128, 128, 128,0.3);
+    opacity: 80%;
+    border: 1px solid gray;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.wrapper_box_left {
+    height: 100%;
+}
+
+.color_box_bot {
+    height: 20%;
+    border-bottom-left-radius: 9px;
+    opacity: 50%;
+}
+
+.color_box {
+    width: 39px;
+    height: 80%;
+    border-top-left-radius: 9px;
+    margin-right: 10px;
+}
+
+.g {
+    background: green;
+}
+
+.y {
+    background: orange;
+}
+
+.r {
+    background: red;
+}
