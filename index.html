@@ -24,13 +24,23 @@
     </div>
     <svg width="200" height="200">
       <circle
-        class="progress_circle3"
+        class="progress_circle_layout"
         cx="100"
         cy="100"
         r="94"
         fill="transparent"
         stroke-width="8"
         stroke="rgb(125, 122, 122, 0.5)"
+      ></circle>
+      <circle
+        class="progress_circle3"
+        cx="100"
+        cy="100"
+        r="94"
+        fill="transparent"
+        stroke-width="8"
+        stroke="red"
+        stroke-linecap="round"
       ></circle>
       <circle
         class="progress_circle2"
@@ -56,14 +66,14 @@
     <div>
       <div class="wrapper_client">
         <div>
-          <h3>Промоутеры</h3>
+          <h3 class="name_crcl" id="1">Промоутеры</h3>
         </div>
         <div class="wrapper_left">
           <div class="wrapper_input">
             <input
               class="value_progress"
               id="valueOne"
-              value="32"
+              value="30"
               type="number"
             />
             <div class="wrapper_human">
@@ -83,14 +93,14 @@
 
       <div class="wrapper_client">
         <div>
-          <h3>Скептики</h3>
+          <h3 class="name_crcl" id="2">Скептики</h3>
         </div>
         <div class="wrapper_left">
           <div class="wrapper_input">
             <input
               class="value_progress"
               id="valueTwo"
-              value="39"
+              value="30"
               type="number"
             />
             <div class="wrapper_human">
@@ -107,16 +117,15 @@
           </div>
         </div>
       </div>
-
       <div class="wrapper_client">
         <div>
-          <h3>Критики</h3>
+          <h3 class="name_crcl" id="3">Критики</h3>
         </div>
         <div class="wrapper_left">
           <div class="wrapper_input">
             <input
               class="value_progress"
-              id="valueThere"
+              id="valueThree"
               value="30"
               type="number"
             />
@@ -136,11 +145,32 @@
       </div>
     </div>
 
-    <svg class="position_svg_line" width="50" height="200">
+    <svg class="position_svg_line" width="50" height="250">
       <path
         stroke="gray"
         stroke-width="2"
-        d="M 10,180 V 0 150 M 10,1 H 50 M 10, 125 H 30 M 10, 179 H 30"
+        d="M 10,236 V 0 150 M 10,1 H 50"
+        />
+        <path
+        class="path_crkl"
+        id="1"
+        stroke="gray"
+        stroke-width="5"
+        d="M 10, 125 H 30"
+        />
+        <path
+        class="path_crkl"
+        id="2"
+        stroke="gray"
+        stroke-width="5"
+        d="M 10, 179 H 30"
+        />
+        <path
+        class="path_crkl"
+        id="3"
+        stroke="gray"
+        stroke-width="5"
+        d="M 10, 234 H 30"
         />
     </svg>
     <script src="script.js"></script>

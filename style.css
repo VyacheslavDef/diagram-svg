@@ -8,10 +8,23 @@
     font-family: 'Gotham Pro', Arial;
 }
 
+.name_crcl {
+    cursor: pointer;
+}
+
 .position_svg_line {
     position: relative;
     bottom: 282px;
     right: 140px;
+    transition: all 0.5s;
+}
+
+.ds-none {
+    display: none;
+}
+
+.btn {
+    transform: translateY(170px);
 }
 
 h2 {
@@ -46,7 +59,7 @@ html, body {
     top: 175px;
 }
 
-.progress_circle, .progress_circle2 {
+.progress_circle, .progress_circle2, .progress_circle3 {
     transform-origin: center;
     transform: rotate(-90deg);
 }
